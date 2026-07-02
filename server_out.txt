@@ -1,0 +1,22 @@
+None
+INFO:     127.0.0.1:49749 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56158 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56158 - "GET /static/style.css HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52701 - "GET /static/app.js HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52701 - "GET /api/system-prompt HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56158 - "GET /api/feedback HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62863 - "GET /favicon.ico HTTP/1.1" 404 Not Found
+
+[1/4] Generating SQL query …
+  SQL: SELECT 
+    c.id,
+    c.company,
+    c.last_name,
+    c.first_name,
+    c.email_address,
+    SUM(od.quantity * od.unit_p…
+
+[2/4] Executing SQL query …
+INFO:     127.0.0.1:64581 - "POST /api/chat HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62807 - "GET /api/system-prompt HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62807 - "GET /api/system-prompt HTTP/1.1" 200 OK

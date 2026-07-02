@@ -1,0 +1,14 @@
+{
+  "permissions": {
+    "allow": [
+      "PowerShell(python -c \"import fastapi, uvicorn; print\\('fastapi:', fastapi.__version__\\); print\\('uvicorn:', uvicorn.__version__\\)\")",
+      "PowerShell(py *)",
+      "PowerShell(python -c \"import sys; print\\(sys.executable\\)\" 2>&1; where.exe python 2>&1)",
+      "PowerShell(C:\\\\SQL_Agent\\\\venv\\\\Scripts\\\\python.exe -c \"import uvicorn; import fastapi; import langgraph; print\\('OK'\\)\" 2>&1)",
+      "PowerShell(Invoke-WebRequest -Uri \"http://127.0.0.1:8000/\" -UseBasicParsing 2>&1 | Select-Object -Property StatusCode, StatusDescription)",
+      "PowerShell(C:\\\\SQL_Agent\\\\venv\\\\Scripts\\\\pip.exe install \"langgraph-cli[inmem]\")",
+      "PowerShell(Start-Sleep -Seconds 3; \\(Invoke-RestMethod -Uri \"http://127.0.0.1:2024/ok\" -Method Get\\) | ConvertTo-Json)",
+      "PowerShell(ConvertTo-Json *)"
+    ]
+  }
+}

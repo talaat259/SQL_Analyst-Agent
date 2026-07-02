@@ -1,0 +1,11 @@
+langgraph>=0.2.0
+langgraph-cli[inmem]>=0.1.0
+langchain-ollama>=0.1.0
+langchain-core>=0.2.0
+langsmith>=0.1.0
+mysql-connector-python>=8.0.0
+sqlalchemy>=2.0.0
+plotly>=5.0.0
+pandas>=2.0.0
+matplotlib>=3.7.0
+python-dotenv>=1.0.0
